@@ -8,19 +8,21 @@ A feature-rich, Airbnb-inspired web application that allows users to browse, cre
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## 📋 Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [API Routes](#api-routes)
-- [Database Schema](#database-schema)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [System Architecture](#-system-architecture)
+- [Installation](#-installation)
+- [Environment Variables](#-environment-variables)
+- [Usage](#-usage)
+- [API Routes](#-api-routes)
+- [Database Schema](#-database-schema)
+- [Deployment](#-deployment)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
+  
 ## ✨ Features
 
 ### Core Functionality
@@ -231,7 +233,21 @@ This project is deployed on **Render** with MongoDB Atlas as the database.
 
 ## 📸 Screenshots
 
-_Add screenshots of your application here_
+### Home Page - Listing Overview
+![Home Page](./screenshots/home1.png)
+![Home Page 2](./screenshots/home2.png)
+
+### Individual Listing Details
+![Listing Details 1](./screenshots/list1.png)
+![Listing Details 2](./screenshots/list2.png)
+
+### User Authentication
+![Signup Page](./screenshots/signup.png)
+![Login Page](./screenshots/login.png)
+
+### Listing Management
+![Create New Listing](./screenshots/create.png)
+![Edit Listing](./screenshots/edit.png)
 
 ## 🤝 Contributing
 
