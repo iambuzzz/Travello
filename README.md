@@ -83,30 +83,61 @@ A feature-rich, Airbnb-inspired web application that allows users to browse, cre
 ## 🏗 System Architecture
 
 This project follows the **MVC (Model-View-Controller)** design pattern:
-├── models/ # Database schemas (Listing, Review, User)
+
+Travello/
+│
+├── models/ # Database schemas
+│ ├── listing.js # Listing model
+│ ├── review.js # Review model
+│ └── user.js # User model
+│
 ├── views/ # EJS templates
-│ ├── layouts/ # Layout templates (boilerplate)
-│ ├── includes/ # Partial templates (navbar, footer, flash)
-│ ├── listings/ # Listing-related views
+│ ├── layouts/ # Layout templates
+│ │ └── boilerplate.ejs # Main layout
+│ ├── includes/ # Partial templates
+│ │ ├── navbar.ejs # Navigation bar
+│ │ ├── footer.ejs # Footer
+│ │ └── flash.ejs # Flash messages
+│ ├── listings/ # Listing views
+│ │ ├── index.ejs # All listings
+│ │ ├── show.ejs # Single listing
+│ │ ├── new.ejs # Create listing
+│ │ └── edit.ejs # Edit listing
 │ ├── users/ # User authentication views
+│ │ ├── signup.ejs # Signup form
+│ │ └── login.ejs # Login form
 │ └── errors/ # Error pages
+│ └── error.ejs # Error page
+│
 ├── controllers/ # Business logic
 │ ├── listing.js # Listing controller
 │ ├── review.js # Review controller
 │ └── user.js # User controller
+│
 ├── routes/ # Express routes
 │ ├── listingg.js # Listing routes
 │ ├── revieww.js # Review routes
 │ └── userr.js # User routes
+│
 ├── public/ # Static files
 │ ├── css/ # Stylesheets
+│ │ └── style.css
 │ └── js/ # Client-side scripts
+│ └── script.js
+│
 ├── utils/ # Utility functions
 │ ├── wrapAsync.js # Async error wrapper
 │ └── MyError.js # Custom error class
+│
+├── init/ # Database initialization
+│ ├── data.js # Sample data
+│ └── index.js # DB seed script
+│
 ├── middleware.js # Custom middleware
 ├── cloudconfig.js # Cloudinary configuration
 ├── schema.js # Joi validation schemas
+├── .env # Environment variables
+├── package.json # Dependencies
 └── index.js # Application entry point
 
 
