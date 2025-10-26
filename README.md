@@ -1,6 +1,6 @@
 # 🌍 Travello - Full Stack Hotel Listing Platform
 
-A feature-rich, Airbnb-inspired web application that allows users to browse, create, and manage hotel listings with reviews, authentication, and interactive maps. Built using the **MVC architecture** with modern web development practices.
+A feature-rich, Airbnb-inspired web application that allows users to browse, create, and manage hotel listings with reviews, authentication, and interactive maps. Built using the **MVC architecture** [...]
 
 ![Node.js](https://img.shields.io/badge/Node.js-20.13.1-green)
 ![Express](https://img.shields.io/badge/Express-4.x-lightgrey)
@@ -82,64 +82,68 @@ A feature-rich, Airbnb-inspired web application that allows users to browse, cre
 
 ## 🏗 System Architecture
 
-This project follows the **MVC (Model-View-Controller)** design pattern:
+This project uses the Model-View-Controller (MVC) pattern to keep code modular and maintainable. Below is a clear representation of the repository structure and a short description of each top-level component.
 
+```
 Travello/
-│
-├── models/ # Database schemas
-│ ├── listing.js # Listing model
-│ ├── review.js # Review model
-│ └── user.js # User model
-│
-├── views/ # EJS templates
-│ ├── layouts/ # Layout templates
-│ │ └── boilerplate.ejs # Main layout
-│ ├── includes/ # Partial templates
-│ │ ├── navbar.ejs # Navigation bar
-│ │ ├── footer.ejs # Footer
-│ │ └── flash.ejs # Flash messages
-│ ├── listings/ # Listing views
-│ │ ├── index.ejs # All listings
-│ │ ├── show.ejs # Single listing
-│ │ ├── new.ejs # Create listing
-│ │ └── edit.ejs # Edit listing
-│ ├── users/ # User authentication views
-│ │ ├── signup.ejs # Signup form
-│ │ └── login.ejs # Login form
-│ └── errors/ # Error pages
-│ └── error.ejs # Error page
-│
-├── controllers/ # Business logic
-│ ├── listing.js # Listing controller
-│ ├── review.js # Review controller
-│ └── user.js # User controller
-│
-├── routes/ # Express routes
-│ ├── listingg.js # Listing routes
-│ ├── revieww.js # Review routes
-│ └── userr.js # User routes
-│
-├── public/ # Static files
-│ ├── css/ # Stylesheets
-│ │ └── style.css
-│ └── js/ # Client-side scripts
-│ └── script.js
-│
-├── utils/ # Utility functions
-│ ├── wrapAsync.js # Async error wrapper
-│ └── MyError.js # Custom error class
-│
-├── init/ # Database initialization
-│ ├── data.js # Sample data
-│ └── index.js # DB seed script
-│
-├── middleware.js # Custom middleware
-├── cloudconfig.js # Cloudinary configuration
-├── schema.js # Joi validation schemas
-├── .env # Environment variables
-├── package.json # Dependencies
-└── index.js # Application entry point
+├── models/                # Mongoose schemas and data models
+│   ├── listing.js         # Listing model
+│   ├── review.js          # Review model
+│   └── user.js            # User model
+├── views/                 # EJS templates (UI)
+│   ├── layouts/
+│   │   └── boilerplate.ejs
+│   ├── includes/
+│   │   ├── navbar.ejs
+│   │   ├── footer.ejs
+│   │   └── flash.ejs
+│   ├── listings/
+│   │   ├── index.ejs
+│   │   ├── show.ejs
+│   │   ├── new.ejs
+│   │   └── edit.ejs
+│   ├── users/
+│   │   ├── signup.ejs
+│   │   └── login.ejs
+│   └── errors/
+│       └── error.ejs
+├── controllers/           # Business logic and request handlers
+│   ├── listing.js
+│   ├── review.js
+│   └── user.js
+├── routes/                # Express route definitions
+│   ├── listingg.js
+│   ├── revieww.js
+│   └── userr.js
+├── public/                # Static assets served to clients
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+├── utils/                 # Utility helpers
+│   ├── wrapAsync.js       # Async error wrapper
+│   └── MyError.js         # Custom error class
+├── init/                  # Database seeding / initialization
+│   ├── data.js
+│   └── index.js
+├── middleware.js          # Custom middleware (auth, validation, etc.)
+├── cloudconfig.js         # Cloudinary and related cloud configs
+├── schema.js              # Joi validation schemas
+├── .env                   # Environment variables (not committed)
+├── package.json           # Project dependencies & scripts
+└── index.js               # Application entry point (server)
+```
 
+- Models: Define database structure and relationships (Listings, Reviews, Users).
+- Views: EJS templates that render pages on the server side (layouts, partials, pages).
+- Controllers: Handle request processing, business logic, and interaction between models and views.
+- Routes: Map HTTP endpoints to controller actions.
+- Public: Hosts frontend assets such as CSS and client-side JavaScript.
+- Utils & Middleware: Shared helpers and middleware for error handling, validation, and authentication.
+- Init: Scripts to seed or initialize the database.
+- Config & Entry: Cloud and environment configs plus the server bootstrap (index.js).
+
+This layout helps maintain separation of concerns and makes it easier to navigate, extend, and test the application.
 
 ## 🚀 Installation
 
@@ -354,4 +358,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 ⭐ If you found this project helpful, please consider giving it a star!
-
