@@ -233,21 +233,64 @@ This project is deployed on **Render** with MongoDB Atlas as the database.
 
 ## 📸 Screenshots
 
-### Home Page - Listing Overview
-![Home Page](./screenshots/home1.png)
-![Home Page 2](./screenshots/home2.png)
-
-### Individual Listing Details
-![Listing Details 1](./screenshots/list1.png)
-![Listing Details 2](./screenshots/list2.png)
-
-### User Authentication
-![Signup Page](./screenshots/signup.png)
-![Login Page](./screenshots/login.png)
-
-### Listing Management
-![Create New Listing](./screenshots/create.png)
-![Edit Listing](./screenshots/edit.png)
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Home Page - View 1</h3>
+      <p align="center">
+        <img src="./screenshots/home1.png" alt="Home Page View 1" width="100%">
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">Home Page - View 2</h3>
+      <p align="center">
+        <img src="./screenshots/home2.png" alt="Home Page View 2" width="100%">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Listing Details - Part 1</h3>
+      <p align="center">
+        <img src="./screenshots/list1.png" alt="Listing Details 1" width="100%">
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">Listing Details - Part 2</h3>
+      <p align="center">
+        <img src="./screenshots/list2.png" alt="Listing Details 2" width="100%">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">User Signup</h3>
+      <p align="center">
+        <img src="./screenshots/signup.png" alt="Signup Page" width="100%">
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">User Login</h3>
+      <p align="center">
+        <img src="./screenshots/login.png" alt="Login Page" width="100%">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Create New Listing</h3>
+      <p align="center">
+        <img src="./screenshots/create.png" alt="Create Listing" width="100%">
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">Edit Listing</h3>
+      <p align="center">
+        <img src="./screenshots/edit.png" alt="Edit Listing" width="100%">
+      </p>
+    </td>
+  </tr>
+</table>
 
 ## 🤝 Contributing
 
